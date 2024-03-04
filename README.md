@@ -3,7 +3,7 @@ Esse projeto esta relacionado a uma dissertação de mestrado do PCOMP - UFC - C
 
 O objetivo é propor um modelo de arquitetura capaz de possibilitar a usuários não especialistas extrair a partir de linguagem natural informações de base de dados homogêneas
 ou heterogêneas, armazenadas em banco de dados híbridos, locais ou distribuídos. 
-O modelo de arquitetura proopsta gera transparência para o usuário através de um módulo de interface único para acesso a múltiplos bancos de dados por meio de consultas formuladas
+O modelo de arquitetura proposta gera transparência para o usuário através de um módulo de interface único para acesso a múltiplos bancos de dados por meio de consultas formuladas
 em linguagem natural e suporta diferentes ferramentas de Processamento de Linguagem Natural (PLN) com poucas adaptações, pois foi projetado com módulos independentes com funcionalidades distintas.
 
 A arquitetura segue o modelo cliente- servidor. O lado do servidor possui quatro módulos: i) Módulo de Interface de Usuário, ii) Módulo de Tradução, iii) Módulo de Comunicação e o iv) Módulo de Administração. O modelo pode ser observado na imagem a seguir.
@@ -23,7 +23,7 @@ conjuntos de dados podem ser manipulados. A interface desse módulo ainda não f
 
 **Configuração para conexão com os bancos de dados**
 - Para adicionar ou configurar novos bancos de dados, altere o arquivo conexao.py ( path: modulo_comunicacao->conexao.py)
-- Para bancos de dados relacionais altere informe os dados na linha: host='localhost', port='3306', database='school', user='root', password='Password@123')
+- Para bancos de dados relacionais altere ou informe os dados na linha: host='localhost', port='3306', database='school', user='root', password='Password@123')
 - Ou duplique a função realizar_conexao_mysqlBD() renomeando com um novo nome, e adicione o novo banco.  
 
 **Adição de novas ferramentas de PLN**
