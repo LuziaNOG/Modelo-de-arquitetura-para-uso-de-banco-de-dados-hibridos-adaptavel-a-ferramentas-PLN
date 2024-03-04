@@ -1,4 +1,3 @@
-# MESTRADO-ARQUITETURA-PARA-USO-DE-BANCO-DE-DADOS-HIBRIDOS-E-DISTRIBUIDOS-COM-SUPORTE-A-CONSULTAS-LN
 Esse projeto esta relacionado a uma dissertação de mestrado do PCOMP - UFC - Campus Quixadá.
 
 O objetivo é propor um modelo de arquitetura capaz de possibilitar a usuários não especialistas extrair a partir de linguagem natural informações de base de dados homogêneas
