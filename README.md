@@ -22,7 +22,7 @@ conjuntos de dados podem ser manipulados. A interface desse módulo ainda não f
 ## Observações
 
 **Configuração para conexão com os bancos de dados**
-- Para adicionar ou configurar novos bancos de dados, altere o arquivo conexao.py ( path: proposta->modulo_comunicacao->conexao.py)
+- Para adicionar ou configurar novos bancos de dados, altere o arquivo conexao.py ( path: modulo_comunicacao->conexao.py)
 - Para bancos de dados relacionais altere informe os dados na linha: host='localhost', port='3306', database='school', user='root', password='Password@123')
 - Ou duplique a função realizar_conexao_mysqlBD() renomeando com um novo nome, e adicione o novo banco.  
 
@@ -31,9 +31,9 @@ conjuntos de dados podem ser manipulados. A interface desse módulo ainda não f
 - Crie uma nova pasta com o nome da ferramente no teste_traducao->modulo_traducao e no arquivo traduz.py defina uma função que consiga executar a ferramanta e retornar a consulta traduzida
   
 **Adição de novos bancos de dados**
-- Para a ferramenta LN2SQL realizar a tradução é necessario adicionar o esquema do banco, na pasta database_store ( path: proposta->modulo_traducao->ln2sql-> databases_store ).
+- Para a ferramenta LN2SQL realizar a tradução é necessario adicionar o esquema do banco, na pasta database_store ( path: modulo_traducao->ln2sql-> databases_store ).
 - Para gerar o esquema, pode-se utilizar o phpmyadmin, no caso do banco de dados MySQL, através de http://localhost/phpmyadmin/ e exportar o banco (exporte somente a estrutura sem os dados, porque senão o arquivo vai ficar muito grande).
 - Por enquanto, não há suporte para outros bancos de dados não relacionais, além do mongoDB.
 
 **Execução**
-- Utilize o python3 para executar a main e direcione a saida para um arquivo .txt, exemplo: python3 proposta/modulos/main.py >> outfile.txt
+- Utilize o python3 para executar a main e direcione a saida para um arquivo .txt, exemplo: python3 modulos/main.py >> outfile.txt
